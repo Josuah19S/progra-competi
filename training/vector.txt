@@ -2,3 +2,5 @@ a.empty() // Boolean
 a.erase() // Delete by index
 remove()
 remove_if()
+
+auto max = max_element(a.begin(), a.end()); // max element of an array
