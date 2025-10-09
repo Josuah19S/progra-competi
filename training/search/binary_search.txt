@@ -1,14 +1,14 @@
 int binary_search(vector<int>&a, int k, int n){
-    // int n = a.size();
-    int l = -1, r = n;
-    while (r - l > 1) {
-        int m = (l + r) / 2;
-        if (k < a[m]) {
-            r = m; // a[l] <= k < a[m] <= a[r]
-        } else {
-            l = m; // a[l] <= a[m] <= k < a[r]
-        }
+  // int n = a.size();
+  int l = -1, r = n;
+  while (r - l > 1) {
+    int m = (l + r) / 2;
+    if (k < a[m]) {
+      r = m; // a[l] <= k < a[m] <= a[r]
+    } else {
+      l = m; // a[l] <= a[m] <= k < a[r]
     }
- 
-    return l+1;
+  }
+
+  return l+1;
 }

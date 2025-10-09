@@ -1,0 +1,14 @@
+Basic
+bubble sort -> O(n^2)
+selection sort -> O(n^2)
+insertion sort -> O(n^2)
+
+Efficient
+merge sort -> O(n log n)
+quick sort -> O(n^2)
+heap sort -> O(n log n)
+
+Specialized
+counting sort -> O(n + k)
+radix sort -> O(d * (n + k))
+bucket sort -> O(n^2)

@@ -1,0 +1,29 @@
+// When n <= 10^4
+ll fact(int n) {
+  if (n == 0 || n == 1) return 1;
+  return n * fact(n-1);
+}
+
+// When n <= 5000
+string multiply(string a, int b) {
+  int carry = 0;
+  string res = "";
+  for (int i = a.size() - 1; i >= 0; --i) {
+    int prod = (a[i] - '0') * b + carry;
+    res += char('0' + (prod % 10));
+    carry = prod / 10;
+  }
+  while (carry) {
+    res += char('0' + (carry % 10));
+    carry /= 10;
+  }
+  reverse(res.begin(), res.end());
+  return res;
+}
+
+string factorial(int n) {
+  string res = "1";
+  for (int i = 2; i <= n; ++i)
+    res = multiply(res, i);
+  return res;
+}

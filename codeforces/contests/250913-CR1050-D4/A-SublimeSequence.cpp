@@ -2,7 +2,7 @@
 Date: 13/09/2025
 Codeforces Round 1050 (Div. 4)
 A. Sublime Sequence
-
+Accepted
 */
 
 #include<bits/stdc++.h>

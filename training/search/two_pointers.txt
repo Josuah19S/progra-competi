@@ -1,0 +1,11 @@
+// Determinar si dos elementos de un arreglo suman n
+bool tpSum(vector<int>& v, int n) {
+  int i = 0, j = v.size() - 1, sum;
+  while (i < j) {
+    sum = v[i] + v[j];
+    if (sum == n) return true;
+    else if (sum < n) i++;
+    else j--;
+  }
+  return false;
+}
