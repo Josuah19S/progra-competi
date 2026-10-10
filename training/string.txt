@@ -18,3 +18,8 @@ void bitmaskSplit(string s){
         cout<<part<<"\n";
     }
 }
+
+// Agregar caracteres al final de un string
+string s = "Hola";
+s.push_back('!');
+s += '!';

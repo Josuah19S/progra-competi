@@ -1,0 +1,5 @@
+// Lectura múltiple, acepta diferentes tipos de datos
+cin>>a>>b>>c;
+
+// Salida condicional, anidable
+cout<<(<condicion> ? <caso_verdadero> : <caso_falso>);
